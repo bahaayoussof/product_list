@@ -1,0 +1,86 @@
+.page_container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	height: calc(100vh - 270px);
+}
+
+.card {
+	position: relative;
+	width: 320px;
+	height: 450px;
+	background: #fff;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.image_container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.image_container .product_image {
+	width: 100%;
+	height: 55%;
+	object-fit: fill;
+}
+
+.product_details {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	transition: 1s;
+	z-index: 100;
+}
+
+.card:hover .product_details {
+	height: 150px;
+}
+
+.product_details .product_title,
+.product_details .product_price {
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #333;
+	margin: 10px;
+}
+
+.product_details .product_price::before {
+	content: "$";
+}
+
+.product_details a {
+	display: inline-block;
+	padding: 10px 20px;
+	width: 150px;
+	border-radius: 8px;
+	background: #eee;
+	text-decoration: none;
+	font-weight: 600;
+	color: #333;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s;
+}
+
+.card:hover .product_details a {
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.7s;
+}
+
+.error_message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
