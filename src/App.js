@@ -6,7 +6,7 @@ const Products = lazy(() => import("./components/products/Products"));
 function App() {
 	return (
     <Suspense fallback={<>Loading...</>}>
-			{/* <Navbar /> */}
+			<Navbar />
 			<main>
 				<Products />
 			</main>
