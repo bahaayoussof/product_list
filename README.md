@@ -1,8 +1,7 @@
 ## Product List
-Product list is a responsive web page contains list of random products
+Product List is a responsive web page that displays a list of random products.
 
-
-###### Life Site
+###### Check out the live site.
 > [Product List](https://gol-product-list.vercel.app/)
 
 
