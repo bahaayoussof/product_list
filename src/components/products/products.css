@@ -4,7 +4,6 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1rem;
-	height: calc(100vh - 270px);
 }
 
 .product_card {
@@ -27,7 +26,7 @@
 .image_container .product_image {
 	width: 100%;
 	height: 55%;
-	object-fit: fill;
+	object-fit: contain;
 
 	transition: opacity 0.3s ease-in-out;
 }
