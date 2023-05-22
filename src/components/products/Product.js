@@ -21,7 +21,7 @@ const Product = ({ product }) => {
 
 	return (
 		<div
-			className={`product_card ${isHovered ? "hovered" : ""}`}
+			className="product_card"
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
